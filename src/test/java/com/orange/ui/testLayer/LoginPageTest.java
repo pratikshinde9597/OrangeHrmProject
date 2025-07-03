@@ -1,5 +1,6 @@
 package com.orange.ui.testLayer;
 
+import com.orange.ui.pageLayer.AddPersonalDetailsPage;
 import com.orange.ui.pageLayer.ContactPage;
 import com.orange.ui.pageLayer.HomePage;
 import com.orange.ui.pageLayer.LoginPage;
@@ -23,6 +24,12 @@ public class LoginPageTest {
 		ContactPage page = new ContactPage();
 		
 		page.validateContactPageFunctionality("Prajakta", "Jamdar");
+		
+		
+		AddPersonalDetailsPage personalDetails = new AddPersonalDetailsPage();
+		
+		personalDetails.validateAddPersonalDetailsPage("Komal", "Dhole", "Female");
+		
 	}
 
 }
