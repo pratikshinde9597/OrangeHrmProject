@@ -1,5 +1,6 @@
 package com.orange.ui.testLayer;
 
+import com.orange.ui.pageLayer.ContactPage;
 import com.orange.ui.pageLayer.HomePage;
 import com.orange.ui.pageLayer.LoginPage;
 import com.orange.ui.pageLayer.SignUpPage;
@@ -18,6 +19,10 @@ public class LoginPageTest {
 		
 		HomePage homePage=new HomePage();
 		homePage.validateHomePageFunctionality("OranageHrm");
+		
+		ContactPage page = new ContactPage();
+		
+		page.validateContactPageFunctionality("Prajakta", "Jamdar");
 	}
 
 }
