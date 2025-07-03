@@ -1,6 +1,7 @@
 package com.orange.ui.testLayer;
 
 import com.orange.ui.pageLayer.AddPersonalDetailsPage;
+import com.orange.ui.pageLayer.AddUser;
 import com.orange.ui.pageLayer.ContactPage;
 import com.orange.ui.pageLayer.HomePage;
 import com.orange.ui.pageLayer.LoginPage;
@@ -29,6 +30,10 @@ public class LoginPageTest {
 		AddPersonalDetailsPage personalDetails = new AddPersonalDetailsPage();
 		
 		personalDetails.validateAddPersonalDetailsPage("Komal", "Dhole", "Female");
+		
+		AddUser obj = new AddUser();
+		
+		obj.addUserFunctionality("Aditya", "Pawar");
 		
 	}
 
