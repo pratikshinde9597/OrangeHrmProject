@@ -1,5 +1,6 @@
 package com.orange.ui.testLayer;
 
+import com.orange.ui.pageLayer.HomePage;
 import com.orange.ui.pageLayer.LoginPage;
 import com.orange.ui.pageLayer.SignUpPage;
 
@@ -14,6 +15,9 @@ public class LoginPageTest {
 		SignUpPage sign =new SignUpPage();
 		
 		sign.validateSignUPFunctionality("Hemant", "Kamble", "Male");
+		
+		HomePage homePage=new HomePage();
+		homePage.validateHomePageFunctionality("OranageHrm");
 	}
 
 }
